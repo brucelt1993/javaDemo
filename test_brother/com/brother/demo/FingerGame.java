@@ -14,6 +14,9 @@ public class FingerGame {
 		startGame(3);
 	}
 
+	/**
+	 * @param num
+	 */
 	public static void startGame(int num) {
 		String[] type = { "石头", "剪头", "布" };
 		System.out.println("************游戏开始*****************");
@@ -51,7 +54,7 @@ public class FingerGame {
 		}
 		scanner.close();
 		System.out.println("------游戏结果------");
-		if (userWin > sysWin) {
+		if (userWin > sysWin){
 			System.out.println("恭喜你"+userWin+":"+sysWin+"赢了电脑");
 		} else if (sysWin > userWin) {
 			System.out.println("遗憾"+userWin+":"+sysWin+"输给了电脑");
